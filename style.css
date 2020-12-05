@@ -370,12 +370,11 @@ header ul li a.active:before {
   color: var(--Primary-color);
   margin-left: 60px;
 }
-.qui-suis-je .container .content-box .underline .under-two {
+.qui-suis-je .container .content-box .underline .under-two,
+.qui-suis-je .container .content-box .underline .under-one {
   background-color: var(--Primary-color);
 }
-.qui-suis-je .container .content-box .underline .under-one {
-  background-color: #000;
-}
+
 .qui-suis-je .container .content-box h2 {
   font-size: 40px;
   letter-spacing: 1px;
