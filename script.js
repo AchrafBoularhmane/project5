@@ -14,7 +14,7 @@ function toggleoff() {
   body.classList.remove("stop-scrolling");
 }
 // Fixing nav bar on scroll //
-var height = $("#navbar").height();
+var height = $("#home").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
     $("#Accueil").removeClass("active");
