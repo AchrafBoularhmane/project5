@@ -222,6 +222,7 @@ header ul li a.active:before {
   z-index: 20;
 }
 .fix-navbar .MenuPlusLogo {
+  transition: 1.5s;
   background: var(--Primary-color);
 }
 .fix-navbar .MenuPlusLogo header .mobile-navbar ul li a {
