@@ -37,3 +37,14 @@ $(document).ready(function () {
     );
   });
 });
+
+// temoignage slider //
+$(function () {
+  $("#client-temoignage").owlCarousel({
+    items: 1,
+    autoplay: true,
+    smartSpeed: 600,
+    loop: true,
+    autoPlayHoverPause: true,
+  });
+});

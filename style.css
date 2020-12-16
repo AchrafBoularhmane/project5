@@ -82,7 +82,7 @@
 .container-padding {
   padding-top: 100px;
 }
-.container {
+.cont {
   position: relative;
   min-height: 100vh;
 }
@@ -674,24 +674,24 @@ header ul li a.active:before {
   fill: #ffffff;
 }
 
-.qui-suis-je .container {
+.qui-suis-je .cont {
   display: flex;
   position: relative;
   width: 100%;
 }
-.qui-suis-je .container .content-box {
+.qui-suis-je .cont .content-box {
   width: 50%;
   color: var(--Primary-color);
   margin-left: 60px;
 }
-.qui-suis-je .container .content-box .underline .under-two {
+.qui-suis-je .cont .content-box .underline .under-two {
   background-color: var(--Primary-color);
 }
-.qui-suis-je .container .content-box .underline .under-one {
+.qui-suis-je .cont .content-box .underline .under-one {
   background-color: var(--Primary-color);
 }
 
-.qui-suis-je .container .content-box h2 {
+.qui-suis-je .cont .content-box h2 {
   font-size: 40px;
   letter-spacing: 1px;
   line-height: 25px;
@@ -699,13 +699,13 @@ header ul li a.active:before {
   font-weight: 900;
   padding: 10px 0;
 }
-.qui-suis-je .container .content-box p {
+.qui-suis-je .cont .content-box p {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 27.3px;
 }
-.qui-suis-je .container .img-box {
+.qui-suis-je .cont .img-box {
   position: relative;
   z-index: 4;
   width: 50%;
@@ -714,7 +714,7 @@ header ul li a.active:before {
   background-size: cover;
 }
 
-.qui-suis-je .container .img-box img {
+.qui-suis-je .cont .img-box img {
   border: 10px solid var(--Primary-color);
   position: relative;
   width: 100%;
@@ -722,7 +722,7 @@ header ul li a.active:before {
   opacity: 1;
   z-index: 3;
 }
-.qui-suis-je .container .img-box .carreau {
+.qui-suis-je .cont .img-box .carreau {
   position: absolute;
   top: 0;
   border: 2px solid var(--third-color);
@@ -732,7 +732,7 @@ header ul li a.active:before {
   margin-left: -30px;
   z-index: 1;
 }
-.qui-suis-je .container .img-box .carreau2 {
+.qui-suis-je .cont .img-box .carreau2 {
   position: absolute;
   bottom: 0;
   border: 2px solid var(--third-color);
@@ -773,30 +773,30 @@ header ul li a.active:before {
   color: var(--Primary-color);
 }
 @media (max-width: 767px) {
-  .qui-suis-je .container {
+  .qui-suis-je .cont {
     display: block;
   }
   .qui-suis-je {
     padding: 100px 10px;
   }
-  .qui-suis-je .container .img-box {
+  .qui-suis-je .cont .img-box {
     width: 100%;
   }
 
-  .qui-suis-je .container .img-box img {
+  .qui-suis-je .cont .img-box img {
     min-height: 400px;
   }
-  .qui-suis-je .container .img-box .carreau {
+  .qui-suis-je .cont .img-box .carreau {
     padding: 10px;
     margin-top: -10px;
     margin-left: -10px;
   }
-  .qui-suis-je .container .img-box .carreau2 {
+  .qui-suis-je .cont .img-box .carreau2 {
     padding: 10px;
     margin-bottom: -10px;
     margin-right: -10px;
   }
-  .qui-suis-je .container .content-box {
+  .qui-suis-je .cont .content-box {
     width: 100%;
     margin-left: 0;
     margin-top: 50px;
@@ -829,7 +829,7 @@ header ul li a.active:before {
   text-align: center;
   background-color: var(--second-color);
 }
-.card_box .box1 .card {
+.card_box .box1 .card0 {
   display: flex;
   justify-content: space-between;
 }
@@ -864,12 +864,12 @@ header ul li a.active:before {
   z-index: 2;
 }
 
-.card_box .box1 .card .card-img {
+.card_box .box1 .card0 .card-img {
   width: 50%;
   height: 400px;
   position: relative;
 }
-.card_box .box1 .card .card-img .carreau {
+.card_box .box1 .card0 .card-img .carreau {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -878,7 +878,7 @@ header ul li a.active:before {
   border: 2px solid var(--second-color);
   z-index: 1;
 }
-.card_box .box1 .card .card-img .carreau1 {
+.card_box .box1 .card0 .card-img .carreau1 {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -888,7 +888,7 @@ header ul li a.active:before {
   z-index: 1;
 }
 
-.card_box .box1 .card .card-img img {
+.card_box .box1 .card0 .card-img img {
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -896,32 +896,32 @@ header ul li a.active:before {
   height: 100%;
 }
 
-.card_box .box1 .card .card-container {
+.card_box .box1 .card0 .card-cont {
   padding: 40px 0;
   width: 50%;
 }
-.card_box .box1 .card .card-container .underline {
+.card_box .box1 .card0 .card-cont .underline {
   padding-top: 15px;
 }
-.card_box .box1 .card .card-container .underline .under-one {
+.card_box .box1 .card0 .card-cont .underline .under-one {
   width: 80px;
   background-color: var(--second-color);
 }
-.card_box .box1 .card .card-container h3 {
+.card_box .box1 .card0 .card-cont h3 {
   color: #111;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
 }
-.card_box .box1 .card .card-container p {
+.card_box .box1 .card0 .card-cont p {
   color: #333;
   font-size: 15px;
   line-height: 25.3px;
   font-weight: lighter;
   margin-bottom: 20px;
 }
-.card_box .box1 .card .card-container a {
+.card_box .box1 .card0 .card-cont a {
   text-decoration: none;
   padding: 10px 20px;
   font-size: 14px;
@@ -931,7 +931,7 @@ header ul li a.active:before {
   text-transform: uppercase;
   margin-top: 30px;
 }
-.card_box .box1 .card .card-container a:hover {
+.card_box .box1 .card0 .card-cont a:hover {
   background-color: var(--third-color);
 }
 
@@ -949,14 +949,14 @@ header ul li a.active:before {
     margin: 0;
   }
 
-  .card_box .box1 .card {
+  .card_box .box1 .card0 {
     display: block;
     margin-bottom: 40px;
   }
   .lines {
     display: none;
   }
-  .card_box .box1 .card .card-img .carreau {
+  .card_box .box1 .card0 .card-img .carreau {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -965,7 +965,7 @@ header ul li a.active:before {
     border: 2px solid var(--second-color);
     z-index: 1;
   }
-  .card_box .box1 .card .card-img .carreau1 {
+  .card_box .box1 .card0 .card-img .carreau1 {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -974,31 +974,31 @@ header ul li a.active:before {
     border: 2px solid var(--second-color);
     z-index: 1;
   }
-  .card_box .box1 .card .card-container .underline {
+  .card_box .box1 .card0 .card-cont .underline {
     padding-top: 5px;
   }
-  .card_box .box1 .card .card-container h3 {
+  .card_box .box1 .card0 .card-cont h3 {
     font-size: 15px;
   }
-  .card_box .box1 .card .card-container p {
+  .card_box .box1 .card0 .card-cont p {
     font-size: 14px;
   }
-  .card_box .box1 .card .card-container a {
+  .card_box .box1 .card0 .card-cont a {
     font-size: 11px;
   }
 
-  .card_box .box1 .card .card-img {
+  .card_box .box1 .card0 .card-img {
     margin-top: 20px;
   }
-  .card_box .box1 .card .card-img img {
+  .card_box .box1 .card0 .card-img img {
     height: 100%;
     margin-bottom: 20px;
   }
-  .card_box .box1 .card .card-img,
-  .card_box .box1 .card .card-container {
+  .card_box .box1 .card0 .card-img,
+  .card_box .box1 .card0 .card-cont {
     width: 100%;
   }
-  .card_box .box1 .card .card-container {
+  .card_box .box1 .card0 .card-cont {
     padding: 20px 5px;
   }
 }
@@ -1294,7 +1294,7 @@ header ul li a.active:before {
     position: relative;
   }
 }
-/*----------------------------------------------------------------------Témoignages*-------------------------------------------*/
+/*----------------------------------------------------------------------Témoignages-------------------------------------------*/
 #Temoignages {
   background-color: var(--second-color);
   color: var(--Primary-color);
@@ -1310,7 +1310,87 @@ header ul li a.active:before {
 .temoignage-section .content-box .underline .under-two {
   background-color: var(--Primary-color);
 }
+#client-temoignage {
+  margin-top: 100px;
+}
+#client-temoignage .temoignage {
+  padding: 20px 300px;
+  margin-bottom: 15px;
+}
+#client-temoignage .temoignage .a {
+  background-color: var(--Primary-color);
+  padding: 50px;
+  position: relative;
+}
+#client-temoignage .temoignage .a .carreau {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border: 2px solid var(--third-color);
+  background-color: var(--third-color);
+}
+#client-temoignage .temoignage .a .carreau1 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  border: 2px solid var(--third-color);
+  background-color: var(--third-color);
+  z-index: 0;
+}
 
+#client-temoignage .temoignage .a i {
+  font-size: 70px;
+  margin-bottom: 0px;
+  color: var(--second-color);
+  opacity: 0.7;
+}
+
+.temoignage blockquote {
+  border: 0;
+  font-size: italic;
+  color: var(--third-color);
+  position: relative;
+  padding: 20px 0;
+}
+.temoignage blockquote:before,
+.temoignage blockquote:after {
+  font-size: 80px;
+  font-size: normal;
+  line-height: 1px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.temoignage-auteur p {
+  color: var(--third-color);
+  font-size: 17px;
+}
+.temoignage-auteur img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+.temoignage-auteur p strong {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: var(--Primary-color) !important;
+  border-radius: 0 !important;
+  width: 25px !important;
+  height: 4px !important;
+  margin: 5px 2px !important;
+  outline: none;
+}
+.owl-theme .owl-dots .active span {
+  background-color: var(--third-color) !important;
+}
 /*----------------------------------------------------------------------FOOTER*-------------------------------------------*/
 .footer {
   position: relative;
