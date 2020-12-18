@@ -1328,8 +1328,8 @@ header ul li a.active:before {
 }
 
 .temoignage blockquote {
-  font-size: 14px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 29px;
   border: 0;
   font-size: italic;
   color: var(--third-color);
@@ -1348,7 +1348,7 @@ header ul li a.active:before {
 
 .temoignage-auteur p {
   color: var(--third-color);
-  font-size: 14px;
+  font-size: 15px;
 }
 .temoignage-auteur img {
   width: 80px;
