@@ -43,7 +43,7 @@ $(function () {
   $("#client-temoignage").owlCarousel({
     items: 1,
     autoplay: true,
-    smartSpeed: 600,
+    smartSpeed: 1400,
     loop: true,
     autoPlayHoverPause: true,
   });

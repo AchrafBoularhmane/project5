@@ -331,6 +331,7 @@ header ul li a.active:before {
 .social-icons .icons li {
   list-style: none;
   margin-left: 20px;
+  text-align: center;
 }
 .social-icons .icons li a {
   font-size: 25px;
@@ -1311,51 +1312,29 @@ header ul li a.active:before {
 .temoignage-section .content-box .underline .under-two {
   background-color: var(--Primary-color);
 }
+.col-md-12 {
+  padding: 100px 300px !important;
+}
 #client-temoignage {
-  margin-top: 100px;
-}
-#client-temoignage .temoignage {
-  padding: 20px 300px;
-  margin-bottom: 15px;
-}
-#client-temoignage .temoignage .a {
   background-color: var(--Primary-color);
-  padding: 50px;
-  position: relative;
+  padding: 40px;
 }
-#client-temoignage .temoignage .a .carreau {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  border: 2px solid var(--third-color);
-  background-color: var(--third-color);
-}
-#client-temoignage .temoignage .a .carreau1 {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
-  border: 2px solid var(--third-color);
-  background-color: var(--third-color);
-  z-index: 0;
-}
-
 #client-temoignage .temoignage .a i {
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 0px;
   color: var(--second-color);
   opacity: 0.7;
+  margin-bottom: 20px;
 }
 
 .temoignage blockquote {
+  font-size: 14px;
+  line-height: 27px;
   border: 0;
   font-size: italic;
   color: var(--third-color);
   position: relative;
-  padding: 20px 0;
+  padding: 20px;
 }
 .temoignage blockquote:before,
 .temoignage blockquote:after {
@@ -1369,12 +1348,12 @@ header ul li a.active:before {
 
 .temoignage-auteur p {
   color: var(--third-color);
-  font-size: 17px;
+  font-size: 14px;
 }
 .temoignage-auteur img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }
 .temoignage-auteur p strong {
   display: block;
@@ -1382,7 +1361,7 @@ header ul li a.active:before {
   font-weight: 800;
 }
 .owl-theme .owl-dots .owl-dot span {
-  background-color: var(--Primary-color) !important;
+  background-color: rgb(109, 106, 106) !important;
   border-radius: 0 !important;
   width: 25px !important;
   height: 4px !important;
