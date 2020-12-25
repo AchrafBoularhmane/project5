@@ -1,24 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 :root {
-  --Primary-color: #fff;
-  --second-color: #d81028;
-  --third-color: #000;
+  --Primary-color: #010101;
+  --second-color: #e00000;
+  --text-color-white: #fff;
+  --text-color-black: #111;
 }
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  position: relative;
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   width: 12px;
-  background: var(--Primary-color);
+  background: var(--text-color-white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #111;
-  height: 250px;
+  background-color: var(--second-color);
+  height: 100px;
 }
 
 /*stop scrolling*/
@@ -28,29 +30,30 @@
 /* back to top button*/
 .backToTop {
   display: flex;
-  justify-content: space-between;
   z-index: 20;
   position: fixed;
   bottom: 10px;
   right: 5px;
   padding: 15px 30px;
-  background: #111;
+  background: var(--second-color);
   cursor: pointer;
   visibility: hidden;
   opacity: 1;
 }
-
-.backToTop a {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--Primary-color);
-}
 .backToTop i {
   font-size: 20px;
-  margin-right: 20px;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
 }
+.backToTop a {
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color-white);
+}
+
 .top {
   bottom: 40px;
   visibility: visible;
@@ -58,7 +61,7 @@
 }
 /*Description section*/
 .description-section {
-  padding: 0 100px;
+  padding: 0 200px;
   font-size: 15px;
   line-height: 24px;
   text-align: center;
@@ -67,7 +70,7 @@
 .title-section {
   font-family: "Noto Sans JP", sans-serif;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 48px;
   color: var(--Primary-color);
 }
@@ -148,10 +151,33 @@
   margin-right: 10px;
   width: 10px;
 }
+/*scroll in animation*/
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal-2 {
+  transition-delay: 0.1s;
+}
+.reveal-3 {
+  transition-delay: 0.2s;
+}
+.reveal-4 {
+  transition-delay: 0.3s;
+}
+.reveal-5 {
+  transition-delay: 0.4s;
+}
 /*------------------------------------------------------Acceuil---------------------------------------------------------*/
 .home-section {
   min-height: 100vh;
   display: block;
+  background-color: #fff;
 }
 
 .header-container {
@@ -172,16 +198,13 @@
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--third-color);
+  color: var(--text-color-black);
 }
 .header-container header .MenuPlusLogo .logo-header span {
   font-family: "Poppins", sans-serif;
   color: var(--second-color);
   font-weight: 700;
   font-size: 22px;
-}
-.header-container header .MenuPlusLogo .logo-header span span {
-  color: #309000;
 }
 .header-container header .MenuPlusLogo .mobile-navbar {
   width: 55%;
@@ -204,7 +227,7 @@
   font-size: 13.5px;
   font-weight: 600;
   padding: 6px;
-  color: var(--third-color);
+  color: var(--text-color-black);
   text-decoration: none;
 }
 .header-container header .MenuPlusLogo .mobile-navbar ul li a:hover,
@@ -221,14 +244,14 @@ header ul li a.active:before {
   top: 0;
   width: 100%;
   z-index: 20;
+  color: var(--text-color-white);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 .fix-navbar .MenuPlusLogo {
   transition: 1.5s;
-  background: var(--Primary-color);
+  background: #fff;
 }
-.fix-navbar .MenuPlusLogo header .mobile-navbar ul li a {
-  color: #eef2f1;
-}
+
 .home-description-container .home-description-content {
   display: flex;
   padding-right: 60px;
@@ -236,8 +259,8 @@ header ul li a.active:before {
 .home-description-container .home-description-content .home-description {
   z-index: 5;
   width: 600px;
-  background-color: var(--second-color);
-  color: var(--Primary-color);
+  background-color: var(--Primary-color);
+  color: var(--text-color-white);
   padding: 30px;
   margin-right: -100px;
   align-self: center;
@@ -256,15 +279,15 @@ header ul li a.active:before {
   outline: none;
   border: none;
   padding: 15px 30px;
-  background-color: var(--third-color);
+  background-color: var(--second-color);
   font-size: 15px;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
 }
 .home-description-container .home-description-content .home-description button:hover {
-  background-color: var(--Primary-color);
+  background-color: var(--text-color-white);
   border: none;
   outline: none;
   color: var(--second-color);
@@ -276,6 +299,7 @@ header ul li a.active:before {
   width: 100%;
   position: relative;
   z-index: 4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 .home-description-container .home-description-content .img-description img {
   position: relative;
@@ -319,27 +343,27 @@ header ul li a.active:before {
   margin: 0;
   padding: 25px 30px;
   font-size: 30px;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   background-color: var(--second-color);
 }
-.social-icons {
-  align-self: flex-end;
-}
 .social-icons .icons {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 60px;
 }
 .social-icons .icons li {
   list-style: none;
-  margin-left: 20px;
-  text-align: center;
+  padding: 0 10px;
 }
-.social-icons .icons li a {
-  font-size: 25px;
-  text-decoration: none;
-  color: var(--third-color);
+.social-icons .icons li:last-child {
+  padding-right: 0;
 }
-.social-icons .icons li a:hover {
+.social-icons .icons li a i {
   color: var(--second-color);
+  font-size: 23px;
+}
+.social-icons .icons li a i:hover {
+  color: var(--Primary-color);
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
@@ -427,7 +451,7 @@ header ul li a.active:before {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--Primary-color);
+    background: var(--text-color-white);
     z-index: 20;
   }
   .header-container header .MenuPlusLogo .mobile-navbar ul {
@@ -539,7 +563,7 @@ header ul li a.active:before {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--Primary-color);
+    background-color: var(--text-color-white);
   }
   .header-container header .MenuPlusLogo .mobile-navbar ul {
     display: block;
@@ -652,30 +676,11 @@ header ul li a.active:before {
 }
 /***************************************************** QUI-SUIS-JE ***************************************************/
 .qui-suis-je {
-  background-color: var(--second-color);
-  min-height: 100%;
+  background-color: var(--Primary-color);
+  min-height: 100vh;
   position: relative;
   padding: 100px 60px;
 }
-.custom-shape-divider-top-1608002323 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.custom-shape-divider-top-1608002323 svg {
-  position: relative;
-  display: block;
-  width: calc(105% + 1.3px);
-  height: 56px;
-}
-
-.custom-shape-divider-top-1608002323 .shape-fill {
-  fill: #ffffff;
-}
-
 .qui-suis-je .cont {
   display: flex;
   position: relative;
@@ -683,14 +688,14 @@ header ul li a.active:before {
 }
 .qui-suis-je .cont .content-box {
   width: 50%;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   margin-left: 60px;
 }
 .qui-suis-je .cont .content-box .underline .under-two {
-  background-color: var(--Primary-color);
+  background-color: var(--second-color);
 }
 .qui-suis-je .cont .content-box .underline .under-one {
-  background-color: var(--Primary-color);
+  background-color: var(--text-color-white);
 }
 
 .qui-suis-je .cont .content-box h2 {
@@ -717,7 +722,7 @@ header ul li a.active:before {
 }
 
 .qui-suis-je .cont .img-box img {
-  border: 10px solid var(--Primary-color);
+  border: 10px solid #fff;
   position: relative;
   width: 100%;
   height: 100%;
@@ -727,7 +732,7 @@ header ul li a.active:before {
 .qui-suis-je .cont .img-box .carreau {
   position: absolute;
   top: 0;
-  border: 2px solid var(--third-color);
+  border: 2px solid var(--second-color);
   padding: 30px;
   margin-top: -30px;
   left: 0;
@@ -737,7 +742,7 @@ header ul li a.active:before {
 .qui-suis-je .cont .img-box .carreau2 {
   position: absolute;
   bottom: 0;
-  border: 2px solid var(--third-color);
+  border: 2px solid var(--second-color);
   padding: 30px;
   margin-bottom: -30px;
   right: 0;
@@ -756,7 +761,7 @@ header ul li a.active:before {
   list-style: none;
   margin-right: 10px;
   padding: 10px 14px;
-  background-color: var(--Primary-color);
+  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -766,10 +771,7 @@ header ul li a.active:before {
 .icons .icon li i {
   display: inline-block;
   font-size: 21px;
-  color: var(--third-color);
-}
-.icons .icon li:hover {
-  background-color: var(--third-color);
+  color: var(--second-color);
 }
 .icons .icon li:hover i {
   color: var(--Primary-color);
@@ -807,15 +809,15 @@ header ul li a.active:before {
 /*------------------------------------------------------NOS SERVICES----------------------------------------------------*/
 
 #Services {
-  background: #f8f8f8;
+  background: #fff;
 }
 #Services .content-box .title-section {
-  color: var(--second-color);
+  color: var(--Primary-color);
   font-weight: 800;
   text-align: center;
 }
 #Services .content-box p {
-  color: #333;
+  color: var(--text-color-black);
   font-size: 15px;
   line-height: 24px;
   text-align: center;
@@ -824,7 +826,7 @@ header ul li a.active:before {
   justify-content: center;
 }
 #Services .content-box .underline .under-one {
-  background-color: var(--second-color);
+  background-color: var(--Primary-color);
   text-align: center;
 }
 #Services .content-box .underline .under-two {
@@ -903,21 +905,21 @@ header ul li a.active:before {
   width: 50%;
 }
 .card_box .box1 .card0 .card-cont .underline {
-  padding-top: 15px;
+  padding-top: 7px;
 }
 .card_box .box1 .card0 .card-cont .underline .under-one {
   width: 80px;
   background-color: var(--second-color);
 }
 .card_box .box1 .card0 .card-cont h3 {
-  color: #111;
+  color: var(--Primary-color);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
 }
 .card_box .box1 .card0 .card-cont p {
-  color: #333;
+  color: var(--text-color-black);
   font-size: 15px;
   line-height: 25.3px;
   font-weight: lighter;
@@ -928,13 +930,13 @@ header ul li a.active:before {
   padding: 10px 20px;
   font-size: 14px;
   background-color: var(--second-color);
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 30px;
 }
 .card_box .box1 .card0 .card-cont a:hover {
-  background-color: var(--third-color);
+  background-color: var(--Primary-color);
 }
 
 @media (max-width: 767px) {
@@ -1004,9 +1006,124 @@ header ul li a.active:before {
     padding: 20px 5px;
   }
 }
+/*----------------------------------------------------------------------Témoignages-------------------------------------------*/
+#Temoignages {
+  background-color: var(--Primary-color);
+  color: var(--text-color-white);
+  min-height: 100vh;
+}
+.temoignage-section .section-padding {
+  z-index: 2;
+  position: relative;
+}
+
+.temoignage-section .section-padding .content-box {
+  position: relative;
+  z-index: 2;
+}
+.temoignage-section .content-box .title-section {
+  font-weight: 800;
+  color: var(--text-color-white);
+}
+.temoignage-section .content-box .underline {
+  justify-content: center;
+}
+.temoignage-section .content-box .underline .under-one {
+  background-color: #fff;
+}
+.temoignage-section .content-box .underline .under-two {
+  background-color: var(--second-color);
+}
+.row {
+  padding: 100px 300px;
+  z-index: 2;
+}
+.col-md-12 {
+  position: relative;
+  padding: 0 !important;
+}
+#client-temoignage {
+  margin: 0;
+  background-color: #fff;
+}
+
+.col-md-12 .carreau3 {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--second-color);
+}
+.col-md-12 .carreau {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--second-color);
+}
+
+#client-temoignage .temoignage {
+  padding: 40px 10px;
+}
+
+#client-temoignage .temoignage i {
+  font-size: 60px;
+  margin-bottom: 0px;
+  color: var(--second-color);
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.temoignage blockquote {
+  font-size: 16px;
+  line-height: 29px;
+  border: 0;
+  font-size: italic;
+  color: var(--text-color-black);
+  position: relative;
+  padding: 20px;
+}
+.temoignage blockquote:before,
+.temoignage blockquote:after {
+  font-size: 80px;
+  font-size: normal;
+  line-height: 1px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.temoignage-auteur p {
+  color: var(--text-color-black);
+  font-size: 15px;
+}
+.temoignage-auteur img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.temoignage-auteur p strong {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: var(--second-color) !important;
+  border-radius: 0 !important;
+  width: 25px !important;
+  height: 4px !important;
+  margin: 15px 2px !important;
+  outline: none;
+}
+.owl-theme .owl-dots .active span {
+  background-color: var(--Primary-color) !important;
+}
 /*------------------------------------------------------CONTACT ----------------------------------------------------*/
 #Contact {
-  background: #f8f8f8;
+  background: #fff;
+  min-height: 100vh;
 }
 .Contact-section .content-box {
   width: 80%;
@@ -1014,23 +1131,19 @@ header ul li a.active:before {
 }
 .Contact-section .content-box .title-section {
   font-weight: 800;
-  color: var(--second-color);
+  color: var(--Primary-color);
 }
 
 .Contact-section .content-box .underline {
   justify-content: center;
 }
 .Contact-section .content-box .underline .under-one {
-  background-color: var(--second-color);
+  background-color: var(--Primary-color);
 }
 .Contact-section .content-box .underline .under-two {
   background-color: var(--second-color);
 }
-.Contact-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+
 .Contact-section .content-box,
 .Services-section .content-box,
 .procedures .content-box {
@@ -1038,11 +1151,11 @@ header ul li a.active:before {
   width: 100%;
 }
 .Contact-section .content-box .description-section {
-  color: #333;
+  color: var(--text-color-black);
 }
 .Contact-section .content-box p,
 .Services-section .content-box p {
-  color: var(--text-grey-color);
+  color: var(--text-color-black);
 }
 .Contact-section .section-padding .contact-container {
   width: 100%;
@@ -1073,10 +1186,10 @@ header ul li a.active:before {
 .contact-container .contactForm {
   position: relative;
   width: 50%;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   padding: 60px;
   z-index: 3;
-  background-color: var(--Primary-color);
+  background-color: #fff;
 }
 
 .contact-container .contactForm h2 {
@@ -1098,13 +1211,12 @@ header ul li a.active:before {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
-  color: var(--third-color);
-  background-color: var(--Primary-color);
   margin: 15px 0;
   border: none;
   border-bottom: 1px solid var(--second-color);
   outline: none;
   resize: none;
+  color: var(--text-color-black);
 }
 .contact-container .contactForm .inputbox span {
   position: absolute;
@@ -1114,25 +1226,25 @@ header ul li a.active:before {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: var(--third-color);
+  color: var(--Primary-color);
 }
 .contactForm .inputbox input:focus ~ span,
 .contactForm .inputbox input:valid ~ span,
 .contactForm .inputbox textarea:focus ~ span,
 .contactForm .inputbox textarea:valid ~ span {
-  color: var(--third-color);
+  color: var(--Primary-color);
   font-size: 14px;
   transform: translateY(-20px);
 }
 .contactForm .inputbox input[type="submit"] {
   min-width: 160px;
-  background: var(--third-color);
+  background: var(--second-color);
   border: none;
   cursor: pointer;
   font-size: 15px;
   line-height: 27px;
   font-weight: lighter;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   text-transform: uppercase;
   font-weight: 600;
   -webkit-appearance: none;
@@ -1147,8 +1259,8 @@ header ul li a.active:before {
   border-radius: 0;
 }
 .contactForm .inputbox input[type="submit"]:hover {
-  background: var(--second-color);
-  color: var(--Primary-color);
+  background: var(--Primary-color);
+  color: var(--text-color-white);
 }
 .Contact-section .section-padding .contact-container .contact-part2 {
   position: relative;
@@ -1183,7 +1295,7 @@ header ul li a.active:before {
   background: url(./images/contact.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   z-index: 5;
 }
 
@@ -1234,13 +1346,13 @@ header ul li a.active:before {
   line-height: 22.5px;
 }
 .modal button {
-  background: var(--second-color);
+  background: var(--third-color);
   border: none;
   border-radius: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   padding: 7px 35px;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   cursor: pointer;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -1296,81 +1408,7 @@ header ul li a.active:before {
     position: relative;
   }
 }
-/*----------------------------------------------------------------------Témoignages-------------------------------------------*/
-#Temoignages {
-  background-color: var(--second-color);
-  color: var(--Primary-color);
-  min-height: 100vh;
-}
-.temoignage-section .content-box .title-section {
-  font-weight: 800;
-}
-.temoignage-section .content-box .underline {
-  justify-content: center;
-}
-.temoignage-section .content-box .underline .under-one,
-.temoignage-section .content-box .underline .under-two {
-  background-color: var(--Primary-color);
-}
-.col-md-12 {
-  padding: 100px 300px !important;
-}
-#client-temoignage {
-  background-color: var(--Primary-color);
-  padding: 40px;
-}
-#client-temoignage .temoignage .a i {
-  font-size: 60px;
-  margin-bottom: 0px;
-  color: var(--second-color);
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
 
-.temoignage blockquote {
-  font-size: 16px;
-  line-height: 29px;
-  border: 0;
-  font-size: italic;
-  color: #111;
-  position: relative;
-  padding: 20px;
-}
-.temoignage blockquote:before,
-.temoignage blockquote:after {
-  font-size: 80px;
-  font-size: normal;
-  line-height: 1px;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-}
-
-.temoignage-auteur p {
-  color: var(--third-color);
-  font-size: 15px;
-}
-.temoignage-auteur img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-.temoignage-auteur p strong {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-.owl-theme .owl-dots .owl-dot span {
-  background-color: rgb(109, 106, 106) !important;
-  border-radius: 0 !important;
-  width: 25px !important;
-  height: 4px !important;
-  margin: 5px 2px !important;
-  outline: none;
-}
-.owl-theme .owl-dots .active span {
-  background-color: var(--third-color) !important;
-}
 /*----------------------------------------------------------------------FOOTER*-------------------------------------------*/
 .footer {
   position: relative;
@@ -1379,14 +1417,14 @@ header ul li a.active:before {
   display: flex;
   justify-content: space-between;
   padding: 100px 60px;
-  background: var(--third-color);
+  background: var(--Primary-color);
 }
 .Marodesclean h2,
 .plan-site h2,
 .contactfoot h2,
 .horaire h2,
 .inscription-newsletter h2 {
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1413,21 +1451,21 @@ header ul li a.active:before {
 .contactfoot .underline .under-one,
 .horaire .underline .under-one,
 .inscription-newsletter .underline .under-one {
-  background-color: var(--second-color);
+  background-color: #fff;
 }
 .Marodesclean .underline .under-two,
 .plan-site .underline .under-two,
 .contactfoot .underline .under-two,
 .horaire .underline .under-two,
 .inscription-newsletter .underline .under-two {
-  background-color: var(--Primary-color);
+  background-color: var(--second-color);
 }
 
 .Marodesclean p,
 .inscription-newsletter p {
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   font-size: 14px;
-  line-height: 21.8px;
+  line-height: 25.8px;
   font-weight: lighter;
 }
 .inscription-newsletter .newsletter {
@@ -1435,7 +1473,7 @@ header ul li a.active:before {
   padding: 2px 0px;
 }
 .inscription-newsletter .newsletter .input {
-  background: var(--Primary-color);
+  background: var(--text-color-white);
   border: none;
   width: 100%;
   padding: 10px 15px;
@@ -1450,7 +1488,7 @@ header ul li a.active:before {
   display: block;
   background: var(--second-color);
   border: none;
-  color: var(--Primary-color);
+  color: #fff;
   padding: 10px 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -1461,8 +1499,8 @@ header ul li a.active:before {
   border-radius: 0;
 }
 .inscription-newsletter .newsletter .button:hover {
-  background: var(--Primary-color);
-  color: var(--second-color);
+  background: #fff;
+  color: var(--Primary-color);
 }
 .Marodesclean .footer-icons {
   padding: 2px 0;
@@ -1484,11 +1522,8 @@ header ul li a.active:before {
   text-decoration: none;
 }
 .Marodesclean .footer-icons ul li a i {
-  color: var(--Primary-color);
+  color: #fff;
   font-size: 15px;
-}
-.Marodesclean .footer-icons ul li a i:hover {
-  color: var(--third-color);
 }
 .horaire {
   border: none;
@@ -1506,13 +1541,13 @@ header ul li a.active:before {
 .plan-site ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   font-size: 14px;
   line-height: 21.8px;
   font-weight: lighter;
 }
 .plan-site ul li a:hover {
-  color: var(--second-color);
+  color: var(--third-color);
 }
 .plan-site ul li a i {
   color: var(--second-color);
@@ -1520,7 +1555,7 @@ header ul li a.active:before {
   font-size: 14px;
 }
 .plan-site ul li a i:hover {
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 .contactfoot .container-footer div {
@@ -1531,7 +1566,7 @@ header ul li a.active:before {
   font-size: 14px;
   font-weight: lighter;
   line-height: 21.8px;
-  color: var(--Primary-color);
+  color: var(--text-color-white);
   text-align: left;
 }
 .contactfoot .container-footer div span i {
@@ -1542,23 +1577,10 @@ header ul li a.active:before {
 }
 
 .contactfoot .container-footer div span i:hover {
-  color: var(--Primary-color);
+  color: var(--third-color);
 }
 .contactfoot .container-footer div span .fa-envelope {
   font-size: 17px;
-}
-.horaire .horaire-douveture {
-  font-size: 14px;
-  font-weight: lighter;
-  line-height: 21.8px;
-  color: var(--Primary-color);
-  padding-bottom: 15px;
-}
-
-.horaire .horaire-douveture i {
-  color: var(--second-color);
-  margin-right: 10px;
-  font-size: 16px;
 }
 @media (max-width: 767px) {
   .all-footer-parts {
@@ -1619,7 +1641,7 @@ header ul li a.active:before {
 }
 /*---------------------------------------------------------COPYRIGHT---------------------------------------------------*/
 .Copyright {
-  background: var(--second-color);
+  background: #fff;
   padding: 20px 60px;
   color: var(--Primary-color);
   font-size: 13px;
@@ -1640,6 +1662,7 @@ header ul li a.active:before {
 }
 .Copyright a:hover {
   text-decoration: underline;
+  color: var(--second-color);
 }
 @media (max-width: 767px) {
   .Copyright {
