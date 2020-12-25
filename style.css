@@ -154,7 +154,7 @@
 /*scroll in animation*/
 [class*="reveal-"] {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(30px);
 }
 .reveal-visible {
   opacity: 1;
