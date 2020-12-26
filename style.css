@@ -54,8 +54,7 @@
   font-weight: 600;
   color: var(--text-color-white) !important;
 }
-
-.top {
+.Show-backtotop-btn {
   bottom: 40px;
   visibility: visible;
   opacity: 1;
@@ -83,11 +82,8 @@
   padding: 100px 60px;
 }
 /* Cookies */
-.close {
+.close-cookies {
   display: none;
-}
-.fixcookies {
-  z-index: 0;
 }
 .cookies {
   position: absolute;
@@ -706,7 +702,7 @@ header ul li a.active:before {
 .qui-suis-je .section-container .content-box {
   width: 50%;
   color: var(--text-color-white);
-  margin-left: 60px;
+  margin-right: 60px;
 }
 .qui-suis-je .section-container .content-box .underline .under-two {
   background-color: var(--second-color);

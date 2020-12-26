@@ -1,4 +1,4 @@
-// Mobile nav bar// hide coordonee part //
+// Mobile nav bar //
 var menu = document.getElementById("Menu"),
   menuoverlay = document.getElementById("menu-overlay"),
   body = document.getElementsByTagName("BODY")[0];
@@ -13,16 +13,16 @@ function toggleoff() {
   menuoverlay.classList.remove("active");
   body.classList.remove("stop-scrolling");
 }
-// Fixing nav bar on scroll //
+// Fixing nav bar on scroll and adding class to backtotop btn //
 var height = $("#home").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
     $("#Accueil").removeClass("active");
-    $(".backToTop").addClass("top");
+    $(".backToTop").addClass("Show-backtotop-btn");
     $("header").addClass("fix-navbar");
   } else {
     $("#Accueil").addClass("active");
-    $(".backToTop").removeClass("top");
+    $(".backToTop").removeClass("Show-backtotop-btn");
     $("header").removeClass("fix-navbar");
   }
 });
@@ -40,14 +40,14 @@ $(document).ready(function () {
 // Cookies //
 var cookies = document.getElementById("cookie");
 function Close() {
-  cookies.classList.add("close");
+  cookies.classList.add("close-cookies");
 }
 document.getElementById("ok").addEventListener("click", function (event) {
   event.preventDefault();
-  cookies.classList.add("close");
+  cookies.classList.add("close-cookies");
 });
 document.getElementById("ensavoirplus").addEventListener("click", function (event) {
-  cookies.classList.add("close");
+  cookies.classList.add("close-cookies");
 });
 
 // temoignage slider //
