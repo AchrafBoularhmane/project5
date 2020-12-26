@@ -305,7 +305,7 @@ header ul li a.active:before {
   z-index: 4;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
-.home-description-container .home-description-content .img-description .background-img {
+.home-description-container .home-description-content .img-description .black-backgr {
   z-index: 4;
   position: absolute;
   top: 0;
@@ -322,7 +322,7 @@ header ul li a.active:before {
   opacity: 1;
   z-index: 3;
 }
-.home-description-container .home-description-content .img-description .carreau {
+.home-description-container .home-description-content .img-description .carreau-style {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -654,7 +654,7 @@ header ul li a.active:before {
     background-color: var(--second-color);
   }
 
-  .home-description-container .home-description-content .img-description .carreau {
+  .home-description-container .home-description-content .img-description .carreau-style {
     padding: 10px;
     margin-bottom: -5px;
     margin-left: -5px;
@@ -734,7 +734,7 @@ header ul li a.active:before {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.qui-suis-je .section-container .img-box .background-img {
+.qui-suis-je .section-container .img-box .black-backgr {
   z-index: 5;
   position: absolute;
   top: 0;
@@ -753,7 +753,7 @@ header ul li a.active:before {
   opacity: 1;
   z-index: 3;
 }
-.qui-suis-je .section-container .img-box .carreau {
+.qui-suis-je .section-container .img-box .carreau-style {
   position: absolute;
   top: 0;
   border: 2px solid var(--second-color);
@@ -814,7 +814,7 @@ header ul li a.active:before {
   .qui-suis-je .section-container .img-box img {
     min-height: 400px;
   }
-  .qui-suis-je .section-container .img-box .carreau {
+  .qui-suis-je .section-container .img-box .carreau-style {
     padding: 10px;
     margin-top: -10px;
     margin-left: -10px;
@@ -847,14 +847,14 @@ header ul li a.active:before {
   text-align: center;
   background-color: var(--second-color);
 }
-#Services .section-container .card_box {
+#Services .section-container .services-box {
   margin-top: 100px;
 }
-.card_box .box1 .card0 {
+.services-box .services-content .service {
   display: flex;
   justify-content: space-between;
 }
-.lines {
+.line-style {
   width: 5px;
   min-height: 100%;
   position: relative;
@@ -862,7 +862,7 @@ header ul li a.active:before {
   z-index: 1;
   margin: 0 40px;
 }
-.circle1 {
+.circle1-style {
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -873,7 +873,7 @@ header ul li a.active:before {
   background-color: var(--second-color);
   z-index: 2;
 }
-.circle2 {
+.circle2-style {
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -885,12 +885,12 @@ header ul li a.active:before {
   z-index: 2;
 }
 
-.card_box .box1 .card0 .card-img {
+.services-box .services-content .service .service-img {
   width: 50%;
   height: 400px;
   position: relative;
 }
-.card_box .box1 .card0 .card-img .background-img {
+.services-box .services-content .service .service-img .black-backgr {
   z-index: 4;
   position: absolute;
   top: 0;
@@ -900,7 +900,7 @@ header ul li a.active:before {
   width: 100%;
   height: 100%;
 }
-.card_box .box1 .card0 .card-img .carreau {
+.services-box .services-content .service .service-img .carreau-style {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -909,7 +909,7 @@ header ul li a.active:before {
   border: 2px solid var(--second-color);
   z-index: 1;
 }
-.card_box .box1 .card0 .card-img .carreau1 {
+.services-box .services-content .service .service-img .carreau1-style {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -919,7 +919,7 @@ header ul li a.active:before {
   z-index: 1;
 }
 
-.card_box .box1 .card0 .card-img img {
+.services-box .services-content .service .service-img img {
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -927,32 +927,32 @@ header ul li a.active:before {
   height: 100%;
 }
 
-.card_box .box1 .card0 .card-cont {
+.services-box .services-content .service .service-description {
   padding: 40px 0;
   width: 50%;
 }
-.card_box .box1 .card0 .card-cont .underline {
+.services-box .services-content .service .service-description .underline {
   padding-top: 7px;
 }
-.card_box .box1 .card0 .card-cont .underline .under-one {
+.services-box .services-content .service .service-description .underline .under-one {
   width: 80px;
   background-color: var(--second-color);
 }
-.card_box .box1 .card0 .card-cont h3 {
+.services-box .services-content .service .service-description h3 {
   color: var(--Primary-color);
   text-transform: uppercase;
   font-size: 25px;
   line-height: 27px;
   font-weight: 700;
 }
-.card_box .box1 .card0 .card-cont p {
+.services-box .services-content .service .service-description p {
   color: var(--text-color-black);
   font-size: 15px;
   line-height: 25.3px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.card_box .box1 .card0 .card-cont a {
+.services-box .services-content .service .service-description a {
   text-decoration: none;
   padding: 10px 20px;
   font-size: 14px;
@@ -962,7 +962,7 @@ header ul li a.active:before {
   text-transform: uppercase;
   margin-top: 30px;
 }
-.card_box .box1 .card0 .card-cont a:hover {
+.services-box .services-content .service .service-description a:hover {
   background-color: var(--Primary-color);
 }
 
@@ -980,14 +980,14 @@ header ul li a.active:before {
     margin: 0;
   }
 
-  .card_box .box1 .card0 {
+  .services-box .services-content .service {
     display: block;
     margin-bottom: 40px;
   }
-  .lines {
+  .line-style {
     display: none;
   }
-  .card_box .box1 .card0 .card-img .carreau {
+  .services-box .services-content .service .service-img .carreau-style {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -996,7 +996,7 @@ header ul li a.active:before {
     border: 2px solid var(--second-color);
     z-index: 1;
   }
-  .card_box .box1 .card0 .card-img .carreau1 {
+  .services-box .services-content .service .service-img .carreau1-style {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -1005,31 +1005,31 @@ header ul li a.active:before {
     border: 2px solid var(--second-color);
     z-index: 1;
   }
-  .card_box .box1 .card0 .card-cont .underline {
+  .services-box .services-content .service .service-description .underline {
     padding-top: 5px;
   }
-  .card_box .box1 .card0 .card-cont h3 {
+  .services-box .services-content .service .service-description h3 {
     font-size: 15px;
   }
-  .card_box .box1 .card0 .card-cont p {
+  .services-box .services-content .service .service-description p {
     font-size: 14px;
   }
-  .card_box .box1 .card0 .card-cont a {
+  .services-box .services-content .service .service-description a {
     font-size: 11px;
   }
 
-  .card_box .box1 .card0 .card-img {
+  .services-box .services-content .service .service-img {
     margin-top: 20px;
   }
-  .card_box .box1 .card0 .card-img img {
+  .services-box .services-content .service .service-img img {
     height: 100%;
     margin-bottom: 20px;
   }
-  .card_box .box1 .card0 .card-img,
-  .card_box .box1 .card0 .card-cont {
+  .services-box .services-content .service .service-img,
+  .services-box .services-content .service .service-description {
     width: 100%;
   }
-  .card_box .box1 .card0 .card-cont {
+  .services-box .services-content .service .service-description {
     padding: 20px 5px;
   }
 }
@@ -1081,7 +1081,7 @@ header ul li a.active:before {
   height: 60px;
   border: 2px solid var(--second-color);
 }
-.col-md-12 .carreau {
+.col-md-12 .carreau-style {
   position: absolute;
   bottom: -15px;
   right: -15px;
@@ -1109,6 +1109,7 @@ header ul li a.active:before {
   font-size: italic;
   color: var(--text-color-black);
   position: relative;
+  text-align: center;
 }
 .temoignage blockquote:before,
 .temoignage blockquote:after {
@@ -1276,12 +1277,12 @@ header ul li a.active:before {
   background: var(--Primary-color);
   color: var(--text-color-white);
 }
-.contact-container .contact-part2 {
+.contact-container .contact-img-part {
   position: relative;
   width: 50%;
 }
 
-.contact-part2 .bord0 {
+.contact-img-part .bord0 {
   position: absolute;
   top: -15px;
   right: -15px;
@@ -1290,7 +1291,7 @@ header ul li a.active:before {
   background-color: var(--second-color);
   z-index: 4;
 }
-.contact-part2 .bord1 {
+.contact-img-part .bord1 {
   position: absolute;
   bottom: -15px;
   right: -15px;
@@ -1299,7 +1300,7 @@ header ul li a.active:before {
   background-color: var(--second-color);
   z-index: 4;
 }
-.contact-container .contact-part2 .background-img {
+.contact-container .contact-img-part .black-backgr {
   z-index: 5;
   position: absolute;
   top: 0;
@@ -1310,7 +1311,7 @@ header ul li a.active:before {
   height: 100%;
 }
 
-.contact-container .contact-part2 .contact-image {
+.contact-container .contact-img-part .contact-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -1421,13 +1422,13 @@ header ul li a.active:before {
     width: 100%;
     padding: 20px;
   }
-  .Contact-section .section-padding .contact-container .contact-part2 {
+  .Contact-section .section-padding .contact-container .contact-img-part {
     width: 100%;
   }
   .Contact-section .section-padding {
     padding: 100px 15px;
   }
-  .Contact-section .section-padding .contact-container .contact-part2 .contact-image {
+  .Contact-section .section-padding .contact-container .contact-img-part .contact-image {
     min-height: 450px;
     position: relative;
   }
@@ -1436,14 +1437,13 @@ header ul li a.active:before {
 /*----------------------------------------------------------------------FOOTER*-------------------------------------------*/
 .footer {
   position: relative;
+  background: var(--Primary-color);
 }
 .all-footer-parts {
   display: flex;
   justify-content: space-between;
-  padding: 100px 60px;
-  background: var(--Primary-color);
 }
-.Marodesclean h2,
+.brand-description h2,
 .plan-site h2,
 .contactfoot h2,
 .horaire h2,
@@ -1454,7 +1454,7 @@ header ul li a.active:before {
   text-transform: uppercase;
   font-weight: 600;
 }
-.Marodesclean {
+.brand-description {
   width: 40%;
   padding-right: 35px;
 }
@@ -1463,21 +1463,21 @@ header ul li a.active:before {
 .inscription-newsletter {
   width: 30%;
 }
-.Marodesclean .underline,
+.brand-description .underline,
 .plan-site .underline,
 .contactfoot .underline,
 .horaire .underline,
 .inscription-newsletter .underline {
   padding-top: 8px;
 }
-.Marodesclean .underline .under-one,
+.brand-description .underline .under-one,
 .plan-site .underline .under-one,
 .contactfoot .underline .under-one,
 .horaire .underline .under-one,
 .inscription-newsletter .underline .under-one {
   background-color: var(--text-color-white);
 }
-.Marodesclean .underline .under-two,
+.brand-description .underline .under-two,
 .plan-site .underline .under-two,
 .contactfoot .underline .under-two,
 .horaire .underline .under-two,
@@ -1485,7 +1485,7 @@ header ul li a.active:before {
   background-color: var(--second-color);
 }
 
-.Marodesclean p,
+.brand-description p,
 .inscription-newsletter p {
   color: var(--p-color-black);
   font-size: 14px;
@@ -1527,26 +1527,26 @@ header ul li a.active:before {
   background: #fff;
   color: var(--Primary-color);
 }
-.Marodesclean .footer-icons {
+.brand-description .footer-icons {
   padding: 2px 0;
 }
-.Marodesclean .footer-icons ul {
+.brand-description .footer-icons ul {
   display: flex;
   list-style: none;
 }
-.Marodesclean .footer-icons ul li {
+.brand-description .footer-icons ul li {
   background: var(--second-color);
   padding: 5px 12px;
   margin-right: 10px;
   border-radius: 50%;
 }
-.Marodesclean .footer-icons ul li:last-child {
+.brand-description .footer-icons ul li:last-child {
   padding: 5px 14px;
 }
-.Marodesclean .footer-icons ul li a {
+.brand-description .footer-icons ul li a {
   text-decoration: none;
 }
-.Marodesclean .footer-icons ul li a i {
+.brand-description .footer-icons ul li a i {
   color: var(--text-color-white);
   font-size: 17px;
 }
@@ -1624,20 +1624,20 @@ header ul li a.active:before {
     margin-left: 0px;
   }
 
-  .Marodesclean {
+  .brand-description {
     width: 100%;
   }
-  .Marodesclean p {
+  .brand-description p {
     font-size: 13px;
   }
-  .Marodesclean h2,
+  .brand-description h2,
   .plan-site h2,
   .contactfoot h2,
   .horaire h2,
   .inscription-newsletter h2 {
     font-size: 22px;
   }
-  .Marodesclean,
+  .brand-description,
   .plan-site,
   .contactfoot,
   .horaire {
