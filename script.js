@@ -114,6 +114,7 @@ var handleIntersect = function (entries, observer) {
   });
 };
 
+document.documentElement.classList.add("reveal-loaded");
 const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
   observer.observe(r);
