@@ -1073,7 +1073,7 @@ header ul li a.active:before {
   background-color: #fff;
 }
 
-.col-md-12 .carreau3 {
+.col-md-12 .carreau1-style {
   position: absolute;
   top: -30px;
   left: -30px;
@@ -1341,37 +1341,38 @@ header ul li a.active:before {
   visibility: visible;
   z-index: 3000000000000000000000000000000000000000000000000;
 }
-.modal {
+
+.modal-container .confirmation-modal {
   opacity: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 30px 50px;
   border-radius: 2px;
-  background: var(--Primary-color);
+  background: var(--text-color-white);
   width: 600px;
   max-width: 100%;
   text-align: center;
 }
-.modal h1 {
+.modal-container .confirmation-modal h1 {
   text-align: left;
   font-size: 26px;
   color: var(--second-color);
   padding-bottom: 20px;
   border-bottom: 0.1px solid rgb(189, 188, 188);
 }
-.modal h1 i {
+.modal-container .confirmation-modal h1 i {
   color: green;
   font-size: 32px;
   margin-left: 4px;
 }
-.modal p {
+.modal-container .confirmation-modal p {
   text-align: left;
   font-size: 14px;
   opacity: 0.7;
   padding: 20px 0px;
   line-height: 22.5px;
 }
-.modal button {
-  background: var(--third-color);
+.modal-container .confirmation-modal button {
+  background: var(--second-color);
   border: none;
   border-radius: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1383,15 +1384,10 @@ header ul li a.active:before {
   -webkit-border-radius: 0;
   outline: none;
 }
-.modal button:hover {
-  background: var(--fourth-color);
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
 .erreur {
   background: #ffe0e0;
   padding: 10px 10px;
+  margin-bottom: 15px;
   color: #262626;
   font-size: 13px;
   display: none;

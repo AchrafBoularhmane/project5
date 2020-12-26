@@ -80,7 +80,7 @@ function SubmitContactForm() {
   var regphone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
     atpos = contact_form.Email.indexOf("@"),
     dotpos = contact_form.Email.lastIndexOf("."),
-    close = document.getElementById("close"),
+    close = document.getElementById("close-modal"),
     modal_container = document.getElementById("modal-container");
   $(".nom ,.prenom ,.mobile ,.email , .objet").removeClass("show");
   if (contact_form.Nom == "") {
