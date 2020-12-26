@@ -60,35 +60,27 @@
   visibility: visible;
   opacity: 1;
 }
-/*Description section*/
-.description-section {
+/* Section's description*/
+.section-description {
   padding: 0 200px;
   font-size: 15px;
   line-height: 24px;
   text-align: center;
+  color: var(--text-color-black);
 }
-/* title section*/
-.title-section {
+/* Section's title*/
+.section-title {
   font-family: "Noto Sans JP", sans-serif;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 48px;
+  font-weight: 800;
   color: var(--Primary-color);
-}
-.center-text {
   text-align: center;
 }
 /*Padding for all website's parts*/
 .section-padding {
   padding: 100px 60px;
-}
-/* padding for all section's container*/
-.container-padding {
-  padding-top: 100px;
-}
-.cont {
-  position: relative;
-  min-height: 100vh;
 }
 /* Cookies */
 .close {
@@ -705,26 +697,25 @@ header ul li a.active:before {
   background-color: var(--Primary-color);
   min-height: 100vh;
   position: relative;
-  padding: 100px 60px;
 }
-.qui-suis-je .cont {
+.qui-suis-je .section-container {
   display: flex;
-  position: relative;
   width: 100%;
+  position: relative;
 }
-.qui-suis-je .cont .content-box {
+.qui-suis-je .section-container .content-box {
   width: 50%;
   color: var(--text-color-white);
   margin-left: 60px;
 }
-.qui-suis-je .cont .content-box .underline .under-two {
+.qui-suis-je .section-container .content-box .underline .under-two {
   background-color: var(--second-color);
 }
-.qui-suis-je .cont .content-box .underline .under-one {
+.qui-suis-je .section-container .content-box .underline .under-one {
   background-color: var(--text-color-white);
 }
 
-.qui-suis-je .cont .content-box h2 {
+.qui-suis-je .section-container .content-box h2 {
   font-size: 40px;
   letter-spacing: 1px;
   line-height: 25px;
@@ -732,14 +723,14 @@ header ul li a.active:before {
   font-weight: 900;
   padding: 10px 0;
 }
-.qui-suis-je .cont .content-box p {
+.qui-suis-je .section-container .content-box p {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 27.3px;
   color: var(--p-color-black);
 }
-.qui-suis-je .cont .img-box {
+.qui-suis-je .section-container .img-box {
   position: relative;
   z-index: 4;
   width: 50%;
@@ -747,7 +738,7 @@ header ul li a.active:before {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.qui-suis-je .cont .img-box .background-img {
+.qui-suis-je .section-container .img-box .background-img {
   z-index: 5;
   position: absolute;
   top: 0;
@@ -758,7 +749,7 @@ header ul li a.active:before {
   height: 100%;
 }
 
-.qui-suis-je .cont .img-box img {
+.qui-suis-je .section-container .img-box img {
   border: 10px solid var(--text-color-white);
   position: relative;
   width: 100%;
@@ -766,7 +757,7 @@ header ul li a.active:before {
   opacity: 1;
   z-index: 3;
 }
-.qui-suis-je .cont .img-box .carreau {
+.qui-suis-je .section-container .img-box .carreau {
   position: absolute;
   top: 0;
   border: 2px solid var(--second-color);
@@ -776,7 +767,7 @@ header ul li a.active:before {
   margin-left: -30px;
   z-index: 1;
 }
-.qui-suis-je .cont .img-box .carreau2 {
+.qui-suis-je .section-container .img-box .carreau2 {
   position: absolute;
   bottom: 0;
   border: 2px solid var(--second-color);
@@ -814,30 +805,30 @@ header ul li a.active:before {
   color: var(--Primary-color);
 }
 @media (max-width: 767px) {
-  .qui-suis-je .cont {
+  .section-padding {
     display: block;
   }
-  .qui-suis-je {
+  .qui-suis-je .section-container {
     padding: 100px 10px;
   }
-  .qui-suis-je .cont .img-box {
+  .qui-suis-je .section-container .img-box {
     width: 100%;
   }
 
-  .qui-suis-je .cont .img-box img {
+  .qui-suis-je .section-container .img-box img {
     min-height: 400px;
   }
-  .qui-suis-je .cont .img-box .carreau {
+  .qui-suis-je .section-container .img-box .carreau {
     padding: 10px;
     margin-top: -10px;
     margin-left: -10px;
   }
-  .qui-suis-je .cont .img-box .carreau2 {
+  .qui-suis-je .section-container .img-box .carreau2 {
     padding: 10px;
     margin-bottom: -10px;
     margin-right: -10px;
   }
-  .qui-suis-je .cont .content-box {
+  .qui-suis-je .section-container .content-box {
     width: 100%;
     margin-left: 0;
     margin-top: 50px;
@@ -848,27 +839,20 @@ header ul li a.active:before {
 #Services {
   background: #f6f6f6;
 }
-#Services .content-box .title-section {
-  color: var(--Primary-color);
-  font-weight: 800;
-  text-align: center;
-}
-#Services .content-box p {
-  color: var(--text-color-black);
-  font-size: 15px;
-  line-height: 24px;
-  text-align: center;
-}
-#Services .content-box .underline {
+
+#Services .section-container .content-box .underline {
   justify-content: center;
 }
-#Services .content-box .underline .under-one {
+#Services .section-container .content-box .underline .under-one {
   background-color: var(--Primary-color);
   text-align: center;
 }
-#Services .content-box .underline .under-two {
+#Services .section-container .content-box .underline .under-two {
   text-align: center;
   background-color: var(--second-color);
+}
+#Services .section-container .card_box {
+  margin-top: 100px;
 }
 .card_box .box1 .card0 {
   display: flex;
@@ -990,10 +974,10 @@ header ul li a.active:before {
   #Services {
     padding: 100px 15px;
   }
-  #Services .content-box .title-section {
+  #Services .section-container .content-box .title-section {
     font-size: 30px;
   }
-  #Services .content-box p {
+  #Services .section-container .content-box p {
     font-size: 13px;
     width: 100%;
     padding: 10px;
@@ -1059,31 +1043,25 @@ header ul li a.active:before {
   color: var(--text-color-white);
   min-height: 100vh;
 }
-.temoignage-section .section-padding {
+.temoignage-section .section-container {
   z-index: 2;
   position: relative;
 }
 
-.temoignage-section .section-padding .content-box {
+.temoignage-section .section-container .content-box {
   position: relative;
   z-index: 2;
 }
-.temoignage-section .content-box .title-section {
-  font-weight: 800;
+.temoignage-section .section-container .content-box .section-title {
   color: var(--text-color-white);
 }
-.temoignage-section .content-box p {
-  font-weight: 400;
-  color: var(--p-color-black);
-}
-
-.temoignage-section .content-box .underline {
+.temoignage-section .section-container .content-box .underline {
   justify-content: center;
 }
-.temoignage-section .content-box .underline .under-one {
+.temoignage-section .section-container .content-box .underline .under-one {
   background-color: var(--text-color-white);
 }
-.temoignage-section .content-box .underline .under-two {
+.temoignage-section .section-container .content-box .underline .under-two {
   background-color: var(--second-color);
 }
 .row {
@@ -1117,7 +1095,7 @@ header ul li a.active:before {
 }
 
 #client-temoignage .temoignage {
-  padding: 40px 10px;
+  padding: 25px 10px;
 }
 
 #client-temoignage .temoignage i {
@@ -1135,7 +1113,6 @@ header ul li a.active:before {
   font-size: italic;
   color: var(--text-color-black);
   position: relative;
-  padding: 20px;
 }
 .temoignage blockquote:before,
 .temoignage blockquote:after {
@@ -1146,7 +1123,6 @@ header ul li a.active:before {
   height: 30px;
   position: absolute;
 }
-
 .temoignage-auteur p {
   color: var(--text-color-black);
   font-size: 15px;
@@ -1154,7 +1130,6 @@ header ul li a.active:before {
 .temoignage-auteur img {
   width: 80px;
   height: 80px;
-  margin-bottom: 10px;
 }
 .temoignage-auteur p strong {
   display: block;
@@ -1177,39 +1152,30 @@ header ul li a.active:before {
   background: #f6f6f6;
   min-height: 100vh;
 }
-.Contact-section .content-box {
+.Contact-section .section-container .content-box {
   width: 80%;
   color: var(--third-color);
 }
-.Contact-section .content-box .title-section {
+.Contact-section .section-container .content-box .title-section {
   font-weight: 800;
   color: var(--Primary-color);
 }
-.Contact-section .content-box .description-section {
-  color: var(--text-color-black);
-}
-.Contact-section .content-box .underline {
+.Contact-section .section-container .content-box .underline {
   justify-content: center;
 }
-.Contact-section .content-box .underline .under-one {
+.Contact-section .section-container .content-box .underline .under-one {
   background-color: var(--Primary-color);
 }
-.Contact-section .content-box .underline .under-two {
+.Contact-section .section-container .content-box .underline .under-two {
   background-color: var(--second-color);
 }
 
-.Contact-section .content-box,
-.Services-section .content-box,
-.procedures .content-box {
+.Contact-section .section-container .content-box {
   position: relative;
   width: 100%;
 }
 
-.Contact-section .content-box p,
-.Services-section .content-box p {
-  color: var(--text-color-black);
-}
-.Contact-section .section-padding .contact-container {
+.Contact-section .section-container .contact-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1252,7 +1218,7 @@ header ul li a.active:before {
   margin-bottom: 50px;
   text-align: center;
 }
-.contact-container .contactForm .inputbox {
+.contact-container.contactForm .inputbox {
   position: relative;
   width: 100%;
   margin-top: 30px;
@@ -1314,7 +1280,7 @@ header ul li a.active:before {
   background: var(--Primary-color);
   color: var(--text-color-white);
 }
-.Contact-section .section-padding .contact-container .contact-part2 {
+.contact-container .contact-part2 {
   position: relative;
   width: 50%;
 }
@@ -1337,7 +1303,7 @@ header ul li a.active:before {
   background-color: var(--second-color);
   z-index: 4;
 }
-.Contact-section .section-padding .contact-container .contact-part2 .background-img {
+.contact-container .contact-part2 .background-img {
   z-index: 5;
   position: absolute;
   top: 0;
@@ -1348,7 +1314,7 @@ header ul li a.active:before {
   height: 100%;
 }
 
-.Contact-section .section-padding .contact-container .contact-part2 .contact-image {
+.contact-container .contact-part2 .contact-image {
   position: absolute;
   top: 0;
   left: 0;
