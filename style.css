@@ -105,10 +105,9 @@
 .cookies .cookies-container h2 {
   text-align: center;
   color: var(--text-color-white);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 10px;
   font-size: 18px;
-  text-transform: uppercase;
 }
 .cookies .cookies-container p {
   padding: 5px 0px;
