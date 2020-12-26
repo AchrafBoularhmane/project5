@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 :root {
-  --Primary-color: #010101;
+  --Primary-color: rgba(25, 25, 25, 0.97);
   --second-color: #e00000;
-  --text-color-white: #fff;
+  --text-color-white: #eeeeee;
   --text-color-black: #111;
+  --p-color-black: #777777;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -47,11 +48,11 @@
 .backToTop a {
   margin-left: 20px;
   font-family: "Poppins", sans-serif;
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-color-white);
+  color: var(--text-color-white) !important;
 }
 
 .top {
@@ -97,43 +98,59 @@
   z-index: 0;
 }
 .cookies {
-  background: #eef2f1;
-  padding: 0 60px;
-  opacity: 0.9;
-  color: var(--Primary-color);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #333;
+  max-width: 400px;
+  padding: 15px;
+  opacity: 1;
+  background-color: rgba(25, 25, 25, 0.92);
   width: 100%;
   font-size: 13px;
   z-index: 13;
 }
 .cookies .cookies-container {
-  display: flex;
-  padding: 16px 0;
+  display: block;
+  padding: 5px 0px;
+}
+.cookies .cookies-container h2 {
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 700;
+  line-height: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .cookies .cookies-container p {
   padding: 5px 0px;
-  color: var(--Primary-color);
+  color: var(--p-color-black);
+  line-height: 22px;
+  font-size: 13px;
 }
 .cookies i {
   cursor: pointer;
   position: absolute;
-  right: 5px;
-  top: 0;
+  right: 7px;
+  top: 5px;
   font-size: 15px;
   z-index: 100;
+  color: var(--second-color);
 }
 .cookies a {
+  list-style: none;
   font-weight: 500;
-  background: var(--Primary-color);
+  background: var(--second-color);
   padding: 6px 15px;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-left: 20px;
-  color: #fff;
+  margin-right: 15px;
+  text-decoration: none !important;
+  color: #eeeeee !important;
   z-index: 100;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
+
 /* Underline title*/
 .underline {
   display: flex;
@@ -260,7 +277,7 @@ header ul li a.active:before {
 .home-description-container .home-description-content .home-description {
   z-index: 5;
   width: 600px;
-  background-color: var(--Primary-color);
+  background-color: rgba(25, 25, 25, 0.97);
   color: var(--text-color-white);
   padding: 30px;
   margin-right: -100px;
@@ -273,6 +290,7 @@ header ul li a.active:before {
 .home-description-container .home-description-content .home-description p {
   font-size: 15px;
   line-height: 27.3px;
+  color: var(--p-color-black);
 }
 
 .home-description-container .home-description-content .home-description button {
@@ -677,7 +695,7 @@ header ul li a.active:before {
 }
 /***************************************************** QUI-SUIS-JE ***************************************************/
 .qui-suis-je {
-  background-color: var(--Primary-color);
+  background-color: rgba(25, 25, 25, 0.97);
   min-height: 100vh;
   position: relative;
   padding: 100px 60px;
@@ -712,6 +730,7 @@ header ul li a.active:before {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 27.3px;
+  color: var(--p-color-black);
 }
 .qui-suis-je .cont .img-box {
   position: relative;
@@ -762,7 +781,7 @@ header ul li a.active:before {
   list-style: none;
   margin-right: 10px;
   padding: 10px 14px;
-  background-color: #fff;
+  background-color: var(--second-color);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -772,7 +791,7 @@ header ul li a.active:before {
 .icons .icon li i {
   display: inline-block;
   font-size: 21px;
-  color: var(--second-color);
+  color: var(--text-color-white);
 }
 .icons .icon li:hover i {
   color: var(--Primary-color);
@@ -818,7 +837,7 @@ header ul li a.active:before {
   text-align: center;
 }
 #Services .content-box p {
-  color: var(--text-color-black);
+  color: #777777;
   font-size: 15px;
   line-height: 24px;
   text-align: center;

@@ -37,6 +37,18 @@ $(document).ready(function () {
     );
   });
 });
+// Cookies //
+var cookies = document.getElementById("cookie");
+function Close() {
+  cookies.classList.add("close");
+}
+document.getElementById("ok").addEventListener("click", function (event) {
+  event.preventDefault();
+  cookies.classList.add("close");
+});
+document.getElementById("ensavoirplus").addEventListener("click", function (event) {
+  cookies.classList.add("close");
+});
 
 // temoignage slider //
 $(function () {
