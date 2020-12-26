@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 :root {
-  --Primary-color: rgba(25, 25, 25, 0.97);
+  --Primary-color: #161617;
   --second-color: #e00000;
-  --text-color-white: #eeeeee;
-  --text-color-black: #111;
+  --text-color-white: #e2dede;
+  --text-color-black: #505050;
   --p-color-black: #777777;
 }
 * {
@@ -16,12 +16,12 @@
 }
 ::-webkit-scrollbar {
   width: 12px;
-  background: var(--text-color-white);
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--second-color);
-  height: 100px;
+  height: 250px;
 }
 
 /*stop scrolling*/
@@ -116,7 +116,7 @@
 }
 .cookies .cookies-container h2 {
   text-align: center;
-  color: #eeeeee;
+  color: var(--text-color-white);
   font-weight: 700;
   line-height: 10px;
   font-size: 18px;
@@ -139,7 +139,6 @@
 }
 .cookies a {
   list-style: none;
-  font-weight: 500;
   background: var(--second-color);
   padding: 6px 15px;
   margin-right: 15px;
@@ -297,16 +296,14 @@ header ul li a.active:before {
   text-decoration: none;
   outline: none;
   border: none;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: var(--second-color);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-color-white);
-  font-weight: 500;
-  text-transform: uppercase;
   cursor: pointer;
 }
 .home-description-container .home-description-content .home-description button:hover {
-  background-color: var(--text-color-white);
+  background-color: var(--Primary-color);
   border: none;
   outline: none;
   color: var(--second-color);
@@ -695,7 +692,7 @@ header ul li a.active:before {
 }
 /***************************************************** QUI-SUIS-JE ***************************************************/
 .qui-suis-je {
-  background-color: rgba(25, 25, 25, 0.97);
+  background-color: var(--Primary-color);
   min-height: 100vh;
   position: relative;
   padding: 100px 60px;
@@ -742,7 +739,7 @@ header ul li a.active:before {
 }
 
 .qui-suis-je .cont .img-box img {
-  border: 10px solid #fff;
+  border: 10px solid var(--text-color-white);
   position: relative;
   width: 100%;
   height: 100%;
@@ -790,7 +787,7 @@ header ul li a.active:before {
 }
 .icons .icon li i {
   display: inline-block;
-  font-size: 21px;
+  font-size: 18px;
   color: var(--text-color-white);
 }
 .icons .icon li:hover i {
@@ -829,7 +826,7 @@ header ul li a.active:before {
 /*------------------------------------------------------NOS SERVICES----------------------------------------------------*/
 
 #Services {
-  background: #fff;
+  background: #f6f6f6;
 }
 #Services .content-box .title-section {
   color: var(--Primary-color);
@@ -837,7 +834,7 @@ header ul li a.active:before {
   text-align: center;
 }
 #Services .content-box p {
-  color: #777777;
+  color: var(--text-color-black);
   font-size: 15px;
   line-height: 24px;
   text-align: center;
@@ -942,7 +939,7 @@ header ul li a.active:before {
   color: var(--text-color-black);
   font-size: 15px;
   line-height: 25.3px;
-  font-weight: lighter;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .card_box .box1 .card0 .card-cont a {
@@ -1045,11 +1042,16 @@ header ul li a.active:before {
   font-weight: 800;
   color: var(--text-color-white);
 }
+.temoignage-section .content-box p {
+  font-weight: 400;
+  color: var(--p-color-black);
+}
+
 .temoignage-section .content-box .underline {
   justify-content: center;
 }
 .temoignage-section .content-box .underline .under-one {
-  background-color: #fff;
+  background-color: var(--text-color-white);
 }
 .temoignage-section .content-box .underline .under-two {
   background-color: var(--second-color);
@@ -1142,7 +1144,7 @@ header ul li a.active:before {
 }
 /*------------------------------------------------------CONTACT ----------------------------------------------------*/
 #Contact {
-  background: #fff;
+  background: #f6f6f6;
   min-height: 100vh;
 }
 .Contact-section .content-box {
@@ -1153,7 +1155,9 @@ header ul li a.active:before {
   font-weight: 800;
   color: var(--Primary-color);
 }
-
+.Contact-section .content-box .description-section {
+  color: var(--text-color-black);
+}
 .Contact-section .content-box .underline {
   justify-content: center;
 }
@@ -1170,9 +1174,7 @@ header ul li a.active:before {
   position: relative;
   width: 100%;
 }
-.Contact-section .content-box .description-section {
-  color: var(--text-color-black);
-}
+
 .Contact-section .content-box p,
 .Services-section .content-box p {
   color: var(--text-color-black);
@@ -1471,7 +1473,7 @@ header ul li a.active:before {
 .contactfoot .underline .under-one,
 .horaire .underline .under-one,
 .inscription-newsletter .underline .under-one {
-  background-color: #fff;
+  background-color: var(--text-color-white);
 }
 .Marodesclean .underline .under-two,
 .plan-site .underline .under-two,
@@ -1483,7 +1485,7 @@ header ul li a.active:before {
 
 .Marodesclean p,
 .inscription-newsletter p {
-  color: var(--text-color-white);
+  color: var(--p-color-black);
   font-size: 14px;
   line-height: 25.8px;
   font-weight: lighter;
@@ -1503,6 +1505,7 @@ header ul li a.active:before {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0;
+  color: var(--second-color);
 }
 .inscription-newsletter .newsletter .button {
   display: block;
@@ -1542,8 +1545,8 @@ header ul li a.active:before {
   text-decoration: none;
 }
 .Marodesclean .footer-icons ul li a i {
-  color: #fff;
-  font-size: 15px;
+  color: var(--text-color-white);
+  font-size: 17px;
 }
 .horaire {
   border: none;
@@ -1561,23 +1564,19 @@ header ul li a.active:before {
 .plan-site ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--text-color-white);
+  color: var(--p-color-black);
   font-size: 14px;
   line-height: 21.8px;
   font-weight: lighter;
 }
 .plan-site ul li a:hover {
-  color: var(--third-color);
+  color: var(--text-color-white);
 }
 .plan-site ul li a i {
   color: var(--second-color);
   padding-right: 5px;
   font-size: 14px;
 }
-.plan-site ul li a i:hover {
-  color: var(--third-color);
-}
-
 .contactfoot .container-footer div {
   padding-bottom: 15px;
   display: flex;
@@ -1586,7 +1585,7 @@ header ul li a.active:before {
   font-size: 14px;
   font-weight: lighter;
   line-height: 21.8px;
-  color: var(--text-color-white);
+  color: var(--p-color-black);
   text-align: left;
 }
 .contactfoot .container-footer div span i {
@@ -1597,7 +1596,7 @@ header ul li a.active:before {
 }
 
 .contactfoot .container-footer div span i:hover {
-  color: var(--third-color);
+  color: var(--text-color-white);
 }
 .contactfoot .container-footer div span .fa-envelope {
   font-size: 17px;
@@ -1661,9 +1660,9 @@ header ul li a.active:before {
 }
 /*---------------------------------------------------------COPYRIGHT---------------------------------------------------*/
 .Copyright {
-  background: #fff;
+  background: var(--text-color-white);
   padding: 20px 60px;
-  color: var(--Primary-color);
+  color: var(--text-color-black);
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
@@ -1675,7 +1674,7 @@ header ul li a.active:before {
 
 .Copyright a {
   text-transform: uppercase;
-  color: var(--Primary-color);
+  color: var(--text-color-black);
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
