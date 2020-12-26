@@ -1488,7 +1488,7 @@ header ul li a.active:before {
   color: var(--p-color-black);
   font-size: 14px;
   line-height: 25.8px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 .inscription-newsletter .newsletter {
   display: flex;
@@ -1567,7 +1567,7 @@ header ul li a.active:before {
   color: var(--p-color-black);
   font-size: 14px;
   line-height: 21.8px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 .plan-site ul li a:hover {
   color: var(--text-color-white);
@@ -1583,7 +1583,7 @@ header ul li a.active:before {
 }
 .contactfoot .container-footer div span {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 21.8px;
   color: var(--p-color-black);
   text-align: left;
