@@ -151,7 +151,7 @@
   margin-right: 10px;
   width: 10px;
 }
-/*scroll in animation*/
+/*onscroll animation*/
 .reveal-loaded [class*="reveal-"] {
   opacity: 0;
   transform: translateY(30px);
