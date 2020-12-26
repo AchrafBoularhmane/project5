@@ -331,7 +331,7 @@ header ul li a.active:before {
   margin-left: -20px;
   z-index: 1;
 }
-.home-description-container .home-description-content .img-description .carreau2 {
+.home-description-container .home-description-content .img-description .carreau2-style {
   position: absolute;
   top: 0;
   left: 0;
