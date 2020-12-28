@@ -691,7 +691,6 @@ header ul li a.active:before {
 @media only screen and (max-width: 600px) {
   .section-padding {
     padding: 100px 10px;
-    background-color: rebeccapurple;
   }
   .qui-suis-je .section-container {
     display: block;
@@ -964,6 +963,7 @@ header ul li a.active:before {
 .row {
   padding: 100px 300px;
   z-index: 2;
+  background-color: pink;
 }
 .col-md-12 {
   position: relative;
@@ -1070,10 +1070,6 @@ header ul li a.active:before {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .row {
-    padding: 100px 60px;
-    z-index: 2;
-  }
 }
 /* Medium devices (landscape tablets, 769px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -1383,7 +1379,6 @@ header ul li a.active:before {
     position: absolute;
     bottom: -10px;
     left: -10px;
-    background-color: pink;
     display: none;
     width: 20px;
     height: 20px;
