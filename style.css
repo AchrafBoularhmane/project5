@@ -43,7 +43,7 @@
 }
 .backToTop-btn i {
   font-size: 20px;
-  color: var(--text-color-white);
+  color: #fff;
 }
 .backToTop-btn a {
   margin-left: 20px;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-color-white) !important;
+  color: #fff !important;
 }
 .Show-backToTop-btn {
   bottom: 40px;
@@ -130,7 +130,7 @@
   padding: 6px 15px;
   margin-right: 15px;
   text-decoration: none !important;
-  color: #eeeeee !important;
+  color: #fff !important;
   z-index: 100;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -294,7 +294,7 @@ header ul li a.active:before {
   padding: 15px 40px;
   background-color: var(--second-color);
   font-size: 17px;
-  color: var(--text-color-white);
+  color: #fff;
   cursor: pointer;
 }
 .home-description-container .home-description-cont .home-description-content .home-description button:hover {
@@ -861,7 +861,7 @@ header ul li a.active:before {
   padding: 10px 20px;
   font-size: 14px;
   background-color: var(--second-color);
-  color: var(--text-color-white);
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 30px;
@@ -1193,7 +1193,7 @@ header ul li a.active:before {
   font-size: 15px;
   line-height: 27px;
   font-weight: lighter;
-  color: var(--text-color-white);
+  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   -webkit-appearance: none;
