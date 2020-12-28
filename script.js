@@ -18,11 +18,11 @@ var height = $("#home").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
     $("#Accueil").removeClass("active");
-    $(".backToTop").addClass("Show-backtotop-btn");
+    $(".backToTop-btn").addClass("Show-backToTop-btn");
     $("header").addClass("fix-navbar");
   } else {
     $("#Accueil").addClass("active");
-    $(".backToTop").removeClass("Show-backtotop-btn");
+    $(".backToTop-btn").removeClass("Show-backToTop-btn");
     $("header").removeClass("fix-navbar");
   }
 });
