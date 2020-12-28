@@ -16,40 +16,42 @@
     <body>
       <!---------------------------------------------------------HOME SECTION------------------------------------------------------>
       <section class="home-section" id="home">
-        <!--Background Image-->
-        <!--<img src="./images/homePic.jpg" alt="" />-->
         <!-- Click to be back to top -->
-        <div class="backToTop" id="backTop">
+        <div class="backToTop-btn" id="backTop">
           <i class="fa fa-long-arrow-up"></i>
           <a href="">Top</a>
         </div>
+        <!--Cookies mentions légales-->
+        <div class="cookies reveal-3" id="cookie">
+          <i class="fa fa-times" aria-hidden="true" id="close-cookies" onclick="Close()"></i>
+          <div class="cookies-container">
+            <h2>Utilisation des cookies</h2>
+            <p>En poursuivant votre navigation sur ce site, vous acceptez nos conditions générales et l’utilisation de cookies pour vous garantir la meilleure expérience sur notre site</p>
+            <a href="" id="ok"> ok </a><a href="../mentions legales/mentions.html" id="ensavoirplus"> en savoir plus</a>
+          </div>
+        </div>
         <!--Header [navbar+logo+cookies]-->
         <div class="header-container" id="navbar">
-          <!--Cookies mentions légales-->
-          <!-- <div class="cookies" id="cookie">
-            <i class="fa fa-times" aria-hidden="true" id="close-cookies" onclick="Close()"></i>
-            <div class="cookies-container">
-              <p>En poursuivant votre navigation sur ce site, vous acceptez nos conditions générales et l’utilisation de cookies pour vous garantir la meilleure expérience sur notre site</p>
-              <a href="" id="ok"> ok </a><a href="./mentions legales/mentions.html" id="ensavoirplus"> en savoir plus</a>
-            </div>
-          </div>-->
           <header>
             <!--Menu + Logo-->
             <div class="MenuPlusLogo">
+              <!-- website's logo-->
               <span class="logo-header">lorem <span> Ipseuim</span></span>
+              <!--mobile version menu-->
               <div class="toggle" id="Menu" onclick="toggle()">
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
                 <span class="four"></span>
               </div>
+              <!-- Menu -->
               <div class="mobile-navbar" id="menu-overlay" onclick="toggleoff()">
                 <ul>
-                  <li><a href="./index.html#home" id="Accueil">Accueil</a></li>
-                  <li><a href="./index.html#qui-suis-je">Qui suis-je?</a></li>
-                  <li><a href="./index.html#Services">Services</a></li>
-                  <li><a href="./index.html#Temoignages">Témoignages</a></li>
-                  <li><a href="./index.html#Contact">Contact</a></li>
+                  <li><a href="../index.html#home" id="Accueil">Accueil</a></li>
+                  <li><a href="../index.html#qui-suis-je">Qui suis-je?</a></li>
+                  <li><a href="../index.html#Services">Services</a></li>
+                  <li><a href="../index.html#Temoignages">Témoignages</a></li>
+                  <li><a href="../index.html#Contact">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -57,51 +59,59 @@
         </div>
         <!--Home Description + social media links-->
         <div class="home-description-container">
-          <div class="home-description-content">
-            <div class="home-description">
-              <h1>Lorem, ipsum dolor.</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit saepe ex culpa adipisci earum reiciendis consequuntur sapiente itaque, cupiditate nam?</p>
-              <button class="Decouverir-services-boutton" onclick="location.href='./index.html#Contact'" type="button">Réservez votre cours</button>
-            </div>
-            <div class="img-description">
-              <div class="carreau"></div>
-              <div class="carreau2"></div>
-              <img src="../images/pexels-kampus-production-5940829.jpg" class="image" />
-              <div class="next-section">
-                <a href="#qui-suis-je"><i class="fa fa-long-arrow-down"></i></a>
+          <div class="home-description-cont">
+            <div class="home-description-content">
+              <!--Home's description-->
+              <div class="home-description">
+                <h1 class="reveal-2">Lorem, ipsum dolor.</h1>
+                <p class="reveal-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit saepe ex culpa adipisci earum reiciendis consequuntur sapiente itaque, cupiditate nam?</p>
+                <button class="Decouverir-services-boutton reveal-3" onclick="location.href='./index.html#Contact'" type="button">Réservez votre cours</button>
+              </div>
+              <!-- home image background-->
+              <div class="img-description reveal-1">
+                <div class="carreau-style"></div>
+                <div class="carreau2-style"></div>
+                <div class="black-backgr"></div>
+                <img src="../images/pexels-kampus-production-5940829.jpg" class="image" />
+                <div class="next-section">
+                  <a href="#qui-suis-je"><i class="fa fa-long-arrow-down"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="social-icons">
-            <ul class="icons">
-              <li>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              </li>
-            </ul>
+            <!-- social media links -->
+            <div class="social-icons reveal-5">
+              <ul class="icons">
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <!------------------------------------------------------Footer--------------------------------------------------------->
-      <section class="footer">
+      <section class="footer section-padding">
         <div class="all-footer-parts">
-          <div class="Marodesclean">
-            <h2>lorem ipsum</h2>
+          <!-- brand description -->
+          <div class="brand-description">
+            <h2 class="reveal-1">lorem ipsum</h2>
             <!-- Underline title-->
-            <div class="underline">
+            <div class="underline reveal-2">
               <span class="under-two"></span>
               <span class="under-one"></span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus cumque mollitia debitis cum repellendus eos dolorum, iure, sed nesciunt odit consequuntur! Quia similique sed odio animi vero eaque earum nisi.</p>
-            <div class="footer-icons">
+            <!-- brand description text-->
+            <p class="reveal-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus cumque mollitia debitis cum repellendus eos dolorum, iure, sed nesciunt odit consequuntur! Quia similique sed odio animi vero eaque earum nisi.</p>
+            <div class="footer-icons reveal-4">
               <ul>
                 <li>
                   <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -118,62 +128,64 @@
               </ul>
             </div>
           </div>
+          <!-- plan site -->
           <div class="plan-site">
-            <h2>Plan du site</h2>
+            <h2 class="reveal-1">Plan du site</h2>
             <!-- Underline title-->
-            <div class="underline">
+            <div class="underline reveal-2">
               <span class="under-two"></span>
               <span class="under-one"></span>
             </div>
             <ul>
-              <li>
+              <li class="reveal-1">
                 <a href="./index.html#coord" class="active" id="Accueil"><i class="fa fa-angle-right"></i>Accueil</a>
               </li>
-              <li>
+              <li class="reveal-2">
                 <a href="./index.html#Apropos"><i class="fa fa-angle-right"></i>Qui suis-je?</a>
               </li>
-              <li>
+              <li class="reveal-3">
                 <a href="./index.html#Services"><i class="fa fa-angle-right"></i>Services</a>
               </li>
-              <li>
+              <li class="reveal-4">
                 <a href="./index.html#Temoignages"><i class="fa fa-angle-right"></i>Témoignages</a>
               </li>
-              <li>
+              <li class="reveal-5">
                 <a href="./index.html#Contact"><i class="fa fa-angle-right"></i>Contact</a>
               </li>
             </ul>
           </div>
+          <!--contact footer-->
           <div class="contactfoot">
-            <h2>contact</h2>
+            <h2 class="reveal-1">contact</h2>
             <!-- Underline title-->
-            <div class="underline">
+            <div class="underline reveal-2">
               <span class="under-two"></span>
               <span class="under-one"></span>
             </div>
             <div class="container-footer">
-              <div>
+              <div class="reveal-3">
                 <span><i class="fa fa-phone"></i></span>
                 <span>(+212) 0 00 00 00 00</span>
               </div>
-              <div>
+              <div class="reveal-4">
                 <span><i class="fa fa-envelope"></i></span>
                 <span>contact@loremipsum.com</span>
               </div>
             </div>
           </div>
-
+          <!-- newsletter part-->
           <div class="inscription-newsletter">
-            <h2>inscription newsletter</h2>
+            <h2 class="reveal-1">inscription newsletter</h2>
             <!-- Underline title-->
-            <div class="underline">
+            <div class="underline reveal-2">
               <span class="under-two"></span>
               <span class="under-one"></span>
             </div>
-            <p>
+            <p class="reveal-3">
               Vous souhaitez recevoir notre actualité dans votre boîte email ?<br />
               renseignez votre email ci-dessous pour vous inscrire
             </p>
-            <div class="newsletter">
+            <div class="newsletter reveal-4">
               <input type="text" name="newsletter" placeholder="Entrez votre adresse e-mail *" class="input" required />
               <input type="button" name="send" value="Envoyer" class="button" />
             </div>
@@ -182,13 +194,13 @@
       </section>
 
       <!-------------------------------------------------------COPYRIGHT---------------------------------------------------->
-      <div class="Copyright">
-        <span>COPYRIGHT © 2020 Lorem ipsum | Tous droits réservés - <a href="../mentions/mentions.html"> MENTIONS LÉGALES </a>| SITE INTERNET RÉALISÉ PAR <a href="www.achrafbl.com" target="_blank">Achraf Boularhmane</a></span>
+      <div class="Copyright reveal-5">
+        <span>COPYRIGHT © 2021 Lorem ipsum | Tous droits réservés - <a href="./mentions/mentions.html"> MENTIONS LÉGALES </a>| SITE INTERNET RÉALISÉ PAR <a href="www.achrafbl.com" target="_blank">Achraf Boularhmane</a></span>
       </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </html>
 </html>
