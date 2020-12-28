@@ -548,6 +548,9 @@ header ul li a.active:before {
     bottom: 10px;
     right: 20px;
   }
+  .home-section {
+    min-height: 100%;
+  }
 }
 /* Medium devices (landscape tablets, 769px and up) */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
@@ -556,6 +559,14 @@ header ul li a.active:before {
   }
   .home-description-container {
     padding: 20px 60px 0px 0px;
+  }
+  .home-section {
+    min-height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1025px) {
+  .home-section {
+    min-height: 100%;
   }
 }
 
@@ -680,6 +691,7 @@ header ul li a.active:before {
 @media only screen and (max-width: 600px) {
   .section-padding {
     padding: 100px 10px;
+    background-color: rebeccapurple;
   }
   .qui-suis-je .section-container {
     display: block;
@@ -1057,14 +1069,21 @@ header ul li a.active:before {
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
   .row {
     padding: 100px 60px;
     z-index: 2;
   }
 }
 /* Medium devices (landscape tablets, 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .row {
+    padding: 100px 60px;
+    z-index: 2;
+  }
+  #Temoignages {
+    min-height: 100%;
+  }
 }
 /*------------------------------------------------------CONTACT ----------------------------------------------------*/
 #Contact {
@@ -1407,9 +1426,15 @@ header ul li a.active:before {
   .contact-container .contactForm {
     padding: 20px;
   }
+  #Contact {
+    min-height: 100%;
+  }
 }
 /* Medium devices (landscape tablets, 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  #Contact {
+    min-height: 100%;
+  }
 }
 
 /*----------------------------------------------------------------------FOOTER*-------------------------------------------*/
@@ -1419,7 +1444,6 @@ header ul li a.active:before {
 }
 .all-footer-parts {
   display: flex;
-  justify-content: space-between;
 }
 .brand-description h2,
 .plan-site h2,
@@ -1433,13 +1457,17 @@ header ul li a.active:before {
   font-weight: 600;
 }
 .brand-description {
-  width: 40%;
+  width: 35%;
   padding-right: 35px;
 }
 .plan-site,
 .contactfoot,
 .inscription-newsletter {
-  width: 30%;
+  width: 32%;
+  margin-right: 20px;
+}
+.inscription-newsletter {
+  margin-right: 0px;
 }
 .brand-description .underline,
 .plan-site .underline,
@@ -1581,12 +1609,11 @@ header ul li a.active:before {
 .contactfoot .container-footer div span .fa-envelope {
   font-size: 17px;
 }
-@media (max-width: 767px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .all-footer-parts {
     display: block;
-    padding: 40px 15px;
   }
-
   .all-footer-parts .plan-site,
   .all-footer-parts .contactfoot,
   .all-footer-parts .horaire,
@@ -1638,6 +1665,13 @@ header ul li a.active:before {
     font-size: 11px;
   }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+/* Medium devices (landscape tablets, 769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+}
+
 /*---------------------------------------------------------COPYRIGHT---------------------------------------------------*/
 .Copyright {
   background: var(--text-color-white);
@@ -1663,7 +1697,9 @@ header ul li a.active:before {
   text-decoration: underline;
   color: var(--second-color);
 }
-@media (max-width: 767px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .Copyright {
     padding: 10px 15px;
     font-size: 13px;
@@ -1671,4 +1707,17 @@ header ul li a.active:before {
   .Copyright a {
     font-size: 13px;
   }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Copyright {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .Copyright a {
+    font-size: 13px;
+  }
+}
+/* Medium devices (landscape tablets, 769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
 }
