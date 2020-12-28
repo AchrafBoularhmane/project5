@@ -557,9 +557,7 @@ header ul li a.active:before {
   .header-container header .MenuPlusLogo {
     padding: 20px 60px;
   }
-  .home-description-container {
-    padding: 20px 60px 0px 0px;
-  }
+
   .home-section {
     min-height: 100%;
   }
